@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konoha | Web3 Strategist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Konoha</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <button id="walletBtn" class="btn secondary">
+        Connect Wallet
+      </button>
+      
+      <p id="walletAddress" style="margin-top:15px; opacity:0.8;"></p>
+      
+    </nav>
+    <div id="chainStatus" class="chain-status">
+        <span id="chainDot"></span>
+        <span id="chainText">Not connected</span>
+      </div>      
+  </header>
+
+  <section class="hero">
+    <h1>Web3 Strategist.</h1>
+    <h2>I help crypto brands grow, convert, and stay relevant.</h2>
+    <p>Positioning • Strategy • Content • blockchain data analysis</p>
+    <a href="#contact" class="btn">Let’s Build</a>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <p>
+      I’m Konoha — a Web3 strategist focused on brand positioning, creator growth,
+      and blockchain data analyst. I help founders and protocols cut through the noise
+      and build trust that actually converts.
+    </p>
+    <div class="onchain-metrics">
+        <div>
+          <span id="walletCount">0</span>
+          <p>Wallets Connected</p>
+        </div>
+      </div>
+      <span id="onchainBadge" class="onchain-badge">On-chain user</span>      
+  </section>
+
+  <section id="services" class="section dark">
+    <h3>What I Do</h3>
+    <div class="grid">
+      <div class="card">Web3 Brand Strategy</div>
+      <div class="card">Content & X Growth</div>
+      <div class="card">Community Positioning</div>
+      <div class="card">blockchain data research and analysis</div>
+    </div>
+  </section>
+  <section class="section">
+    <h3>On-chain Activity Snapshot</h3>
+  
+    <div id="chart" style="
+      height: 320px;
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+    "></div>
+  </section>  
+  <section id="work" class="section">
+    <h3>Selected Work</h3>
+    <ul class="work-list">
+      <li>• Helped Web3 creators grow from 0 → credibility</li>
+      <li>• Strategy support for early-stage crypto projects</li>
+      <li>• Alpha-driven content & brand positioning</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section dark">
+    <h3>Contact</h3>
+    <p>Let’s talk strategy, growth, or partnerships.</p>
+    <a href="http://twitter.com/konohaofweb3" class="btn secondary">X</a>
+    <a href="mailto:balogunayomide85@example.com" class="btn secondary">Email Me</a>
+    <div id="walletCard" class="wallet-card">
+        <p class="label">Connected Wallet</p>
+        <p id="walletCardAddress">—</p>
+        <p id="walletCardChain" class="muted">—</p>
+      </div>      
+  </section>
+
+  <footer>
+    <p>© 2026 Konoha. Built different.</p>
+  </footer>
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+</body>
+</html>
